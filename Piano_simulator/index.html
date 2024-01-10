@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon">
+    <title>Piano Simulator</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Piano Virtual</h2>
+            <div class="column volume-slider">
+                <span>Volume</span><input type="range"min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-check">
+                <span>Teclas</span><input type="checkbox" checked>
+            </div>
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-key="1"><span>a</span></li>
+            <li class="key black" data-key="2"><span>1</span></li>
+            <li class="key white" data-key="3"><span>q</span></li>
+            <li class="key black" data-key="4"><span>2</span></li>
+            <li class="key white" data-key="5"><span>w</span></li>
+            <li class="key white" data-key="6"><span>e</span></li>
+            <li class="key black" data-key="7"><span>4</span></li>
+            <li class="key white" data-key="8"><span>r</span></li>
+            <li class="key black" data-key="9"><span>5</span></li>
+            <li class="key white" data-key="10"><span>t</span></li>
+            <li class="key black" data-key="11"><span>6</span></li>
+            <li class="key white" data-key="12"><span>y</span></li>
+            <li class="key white" data-key="13"><span>u</span></li>
+            <li class="key black" data-key="14"><span>8</span></li>
+            <li class="key white" data-key="15"><span>i</span></li>
+            <li class="key black" data-key="16"><span>9</span></li>
+            <li class="key white" data-key="17"><span>o</span></li>
+            <li class="key white" data-key="18"><span>p</span></li>
+            <li class="key black" data-key="19"><span>-</span></li>
+            <li class="key white" data-key="20"><span>[</span></li>
+            <li class="key black" data-key="21"><span>=</span></li>
+            <li class="key white" data-key="22"><span>]</span></li>
+            <li class="key black" data-key="23"><span>&larr;</span></li>
+            <li class="key white" data-key="24"><span>\</span></li>
+        </ul>
+    </div>
+    
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
